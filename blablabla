@@ -1,7 +1,3 @@
-//        int a = scanner.nextInt();
-//        int b = scanner.nextInt();
-//        int c = scanner.nextInt();
-
 System.out.println(kenobilightsabers(kenobi, 1));
         System.out.println(jediMasterDressColor(kenobi, Color.BLACK));
     }
