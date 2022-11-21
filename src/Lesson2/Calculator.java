@@ -64,8 +64,8 @@ public class Calculator {
         System.out.println(mult(4, 5));
         System.out.println(mult(4.8, 2.2));
         System.out.println(mult(3, 9));
-        System.out.println(div(4, 5));
+        System.out.println(div(4, 5d));
         System.out.println(div(4.8, 2.2));
-        System.out.println(div(3, 9));
+        System.out.println(div(3L, 9));
     }
 }
