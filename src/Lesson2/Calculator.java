@@ -10,7 +10,7 @@ public class Calculator {
         return x + y;
     }
 
-    static double sum(long x, long y) {
+    static long sum(long x, long y) {
         return x + y;
     }
 
@@ -23,7 +23,7 @@ public class Calculator {
         return x - y;
     }
 
-    static double sub(long x, long y) {
+    static long sub(long x, long y) {
         return x - y;
     }
 
@@ -36,7 +36,7 @@ public class Calculator {
         return x * y;
     }
 
-    static double mult(long x, long y) {
+    static long mult(long x, long y) {
         return x * y;
     }
 
@@ -49,7 +49,7 @@ public class Calculator {
         return x / y;
     }
 
-    static double div(long x, long y) {
+    static long div(long x, long y) {
         return x / y;
     }
 
