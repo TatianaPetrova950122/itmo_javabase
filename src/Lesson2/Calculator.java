@@ -41,16 +41,16 @@ public class Calculator {
     }
 
 
-    static int div(int x, int y) {
-        return x / y;
+    static double div(int x, int y) {
+        return (double) x / y;
     }
 
     static double div(double x, double y) {
         return x / y;
     }
 
-    static long div(long x, long y) {
-        return x / y;
+    static double div(long x, long y) {
+        return (double) x / y;
     }
 
     public static void main(String[] args) {
@@ -64,8 +64,8 @@ public class Calculator {
         System.out.println(mult(4, 5));
         System.out.println(mult(4.8, 2.2));
         System.out.println(mult(3, 9));
-        System.out.println(div(7.8, 5.3));
-        System.out.println(div(4d, 2));
-        System.out.println(div(9.7, 4));
+        System.out.println(div(6, 4));
+        System.out.println(div(27, 13));
+        System.out.println(div(25L, 11L));
     }
 }
