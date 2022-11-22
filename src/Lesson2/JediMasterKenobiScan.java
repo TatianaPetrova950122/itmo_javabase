@@ -1,4 +1,9 @@
-System.out.println(kenobilightsabers(kenobi, 1));
+package Lesson2;
+
+public class JediMasterKenobiScan {
+    public static void main(String[] args) {
+        Kenobi kenobi = new Kenobi("Obi-Wan Kenobi", "male", true, 57L, Color.BEIGE, 1);
+        System.out.println(kenobilightsabers(kenobi, 1));
         System.out.println(jediMasterDressColor(kenobi, Color.BLACK));
     }
 
@@ -17,3 +22,6 @@ System.out.println(kenobilightsabers(kenobi, 1));
             System.out.println("Maybe this robe belongs to Master Kenobi");
         }
         return dressedColor;
+
+    }
+}
