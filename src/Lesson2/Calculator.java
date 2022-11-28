@@ -40,7 +40,6 @@ public class Calculator {
         return x * y;
     }
 
-
     static double div(int x, int y) {
         return (double) x / y;
     }
@@ -60,11 +59,11 @@ public class Calculator {
         System.out.println(sum(3, 9));
         System.out.println(sub(4, 5));
         System.out.println(sub(4.8, 2.2));
-        System.out.println(sub(3, 9));
+        System.out.println(sub(123.2, 123));
         System.out.println(mult(4, 5));
         System.out.println(mult(4.8, 2.2));
         System.out.println(mult(3, 9));
-        System.out.println(div(6, 4));
+        System.out.println(div(123.2, 123));
         System.out.println(div(27, 13));
         System.out.println(div(25L, 11L));
     }
