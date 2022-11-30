@@ -1,8 +1,8 @@
 package Lesson4_part2;
 
 public class Unicue {
-    public static void main(String[] args) {
-        int[] array = {1, 2, 3, 1, 2, 4};
+
+    public static void search(int[] array) {
         for (int i = 0; i < array.length; i++) {
             boolean flag = true;
             for (int j = 0; j < array.length; j++) {
@@ -16,5 +16,9 @@ public class Unicue {
                 break;
             }
         }
+    }
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 1, 2, 4};
+        search (array);
     }
 }

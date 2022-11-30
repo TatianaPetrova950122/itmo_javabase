@@ -3,9 +3,11 @@ package Lesson4_part1;
 import java.util.Scanner;
 
 public class СompetingNumbers {
-    public static void main(String[] args) {
-        int a = 0, b = 0, c = 0;
 
+    public static void res () {
+        int a;
+        int b;
+        int c;
         Scanner in = new Scanner(System.in);
 
         System.out.print("Введите первое число: ");
@@ -17,13 +19,10 @@ public class СompetingNumbers {
         System.out.print("Введите третье число: ");
         c = in.nextInt();
 
-        System.out.print("Результат: "+result(c, b, c,true));
+        boolean r = a<b && b<c;
+        System.out.println("Результат: " + r);
     }
-
-    public static boolean result(int a, int b, int c, boolean abc)
-    {
-        if(abc)
-            return (b > a && c > b);
-        return (true);
+    public static void main(String[] args) {
+        res();
     }
 }

@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class threeNumbers {
 
-    public static void main(String[] args) {
-        int a = 0, b = 0, c = 0;
-
+    public static void res () {
+        int a;
+        int b;
+        int c;
         Scanner in = new Scanner(System.in);
 
         System.out.print("Введите первое число: ");
@@ -18,15 +19,11 @@ public class threeNumbers {
         System.out.print("Введите третье число: ");
         c = in.nextInt();
 
-        int realSum = a + b;
-
-        System.out.print("Результат: "+result(c, realSum, true));
+        boolean r = a+b == c;
+        System.out.println("Результат: " + r);
     }
 
-    public static boolean result(int c, int realSum, boolean result)
-    {
-        if(result)
-            return (c == realSum);
-        return (true);
+    public static void main(String[] args) {
+        res();
     }
 }

@@ -1,22 +1,19 @@
 package Lesson4_part2;
 
 import java.util.Arrays;
-import java.util.List;
 
 public class FirstLast {
-    public static void main(String[] args) {
-        List<Integer> list = Arrays.asList(6, 8, 2, 5, 5);
-        System.out.println(list);
-        listSwap(list);
-        System.out.println(list);
+    public static void change(int[] list) {
+        int a1 = list[0];
+        int a2 = list[list.length - 1];
+        list[0] = a2;
+        list[list.length - 1] = a1;
     }
 
-    public static <T> List<T> listSwap(List<T> list) {
-        List<T> tempList = list;
-        T firstElement = tempList.get(0);
-        T lastElement = tempList.get(list.size() - 1);
-        tempList.set(0, lastElement);
-        tempList.set(tempList.size() - 1, firstElement);
-        return tempList;
+    public static void main(String[] args) {
+        int[] list = {6, 8, 2, 5, 5};
+        System.out.println("Array 1: " + Arrays.toString(list));
+        change(list);
+        System.out.println("Array 2: " + Arrays.toString(list));
     }
 }
