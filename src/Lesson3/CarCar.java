@@ -1,19 +1,19 @@
 package Lesson3;
 
-public class Car {
+public class CarCar {
 
     private String color;
     private String title;
     private int weight;
 
-    public Car(String color) {
+    public CarCar(String color) {
         this.color = color;
     }
-    public Car(String color, int weight) {
+    public CarCar(String color, int weight) {
         this.color = color;
         this.weight = weight;
     }
-    public Car() {
+    public CarCar() {
          }
 
     public String getColor() {
@@ -48,8 +48,8 @@ public class Car {
     }
 
     public static void main(String[] args) {
-        Car car1 = new Car("red");
-        Car car2 = new Car("white", 12);
+        CarCar car1 = new CarCar("red");
+        CarCar car2 = new CarCar("white", 12);
         car1.info();
         car2.info();
         }
