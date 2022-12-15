@@ -12,7 +12,6 @@ public class Airplane {
         wing2.infoWing();
     }
 }
-
 class Wing {
     int weight;
 
