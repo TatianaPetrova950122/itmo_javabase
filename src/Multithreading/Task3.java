@@ -4,13 +4,14 @@ public class Task3 {
     public static void main(String[] args) throws InterruptedException {
         Counter counter = new Counter();
         Counter.method();
+        Thread.sleep(1000);
         System.out.println(counter.getCount());
     }
 
     public static class Counter {
         static int count = 0;
 
-        public static void increment() {
+        public synchronized static void increment() {
             count = count + 1;
         }
 
@@ -26,13 +27,17 @@ public class Task3 {
                     increment();
                 }
             }
+
+            NewThread(String name) {
+                super(name);
+            }
         }
-        public synchronized static void method() throws InterruptedException {
+
+        public static void method() {
             int a;
             for (a = 0; a < 100; a++) {
-                NewThread newThread = new NewThread();
-                newThread.start();
-                newThread.join();
+                new NewThread("newThread" + a).start();
+
             }
         }
     }
