@@ -27,8 +27,7 @@ public class Task3 {
                 }
             }
         }
-
-        public static void method() throws InterruptedException {
+        public synchronized static void method() throws InterruptedException {
             int a;
             for (a = 0; a < 100; a++) {
                 NewThread newThread = new NewThread();
